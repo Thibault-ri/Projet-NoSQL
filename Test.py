@@ -14,6 +14,7 @@ Victimes = db.Victimes #Creation Collection
 
 Liste_drogues=['Heroin','Cocaine','Fentanyl','FentanylAnalogue','Oxycodone','Oxymorphone','Ethanol','Hydrocodone','Benzodiazepine','Methadone','Amphet','Tramad','Morphine_NotHeroin','Hydromorphone','Other','OpiateNOS','AnyOpioid']
 ListeVille=["HARTFORD","NEW HAVEN","WATERBURY","BRIDGEPORT", "NEW BRITAIN", "MERIDEN","NORWICH","BRISTOL","NEW LONDON","DANBURY", "TORRINGTON","MANCHESTER","MIDDLETOWN","ENFIELD","STAMFORD","EAST HARTFORD", "MILFORD", "WEST HAVEN","NORWALK","DERBY"]
+ListeEthnie=["White","Hispanic, White","Black","Hispanic, Black","Asian, Other","Asian Indian","Chinese","Hawaiian","Native American, Other"]
 Arret_prog=False
 
 choix_m=0
@@ -42,14 +43,14 @@ while not Arret_prog:
 	print("Tapez le numero de la requete désirée")
 	reponse=int(input())
 	while reponse>17 & reponse<0:
-		print("Ce numero ne correspond a aucun choix, veuillez le modifier: \n Entrez votre choix:\n")
+		print("Ce numero ne correspond à aucun choix, veuillez le modifier: \n Entrez votre choix:\n")
 		reponse=int(input())
 	os.system('cls' if os.name == 'nt' else 'clear')
 	if reponse==1:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
 		while choix_drug not in Liste_drogues:
-			print("Cette drogue ne correspond a aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			print("Cette drogue ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
 			choix_drug=str(input())
 		print("Veuillez choisir un age:")
 		choix=int(input())
@@ -64,7 +65,7 @@ while not Arret_prog:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
 		while choix_drug not in Liste_drogues:
-			print("Cette drogue ne correspond a aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			print("Cette drogue ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
 			choix_drug=str(input())
 		print("Veuillez choisir un age:")
 		choix=int(input())
@@ -79,7 +80,7 @@ while not Arret_prog:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
 		while choix_drug not in Liste_drogues:
-			print("Cette drogue ne correspond a aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			print("Cette drogue ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
 			choix_drug=str(input())
 		print("Veuillez choisir un age:")
 		choix=int(input())
@@ -94,17 +95,38 @@ while not Arret_prog:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
 		while choix_drug not in Liste_drogues:
-			print("Cette drogue ne correspond a aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			print("Cette drogue ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
 			choix_drug=str(input())
 		print("\nVeuillez choisir un sexe: Male ou Female")
 		choix=str(input())
 		while choix not in ["Male","Female"]:
-			print("Ce sexe ne correspond a aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
-			choix_drug=str(input())
+			print("Ce sexe ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			choix=str(input())
 		temp=Victimes.find({choix_drug:"Y"})
 		count=0
 		for x in temp:
 			if str(x["Sex"])==choix:
+				count+=1
+		print("\nIl y a "+str(count)+" victimes correspondant à votre demande")
+		Arret_prog=True
+	if reponse==5:
+		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
+		choix_drug=str(input())
+		while choix_drug not in Liste_drogues:
+			print("Cette drogue ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			choix_drug=str(input())
+		print("\nVeuillez choisir une ethnie parmis les suivantes (attention a bien respecter l orthographe): ")
+		for x in ListeEthnie:
+			print(x)
+		print("\n")
+		choix=str(input())
+		while choix not in ListeEthnie:
+			print("Cette ethnie ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			choix=str(input())
+		temp=Victimes.find({choix_drug:"Y"})
+		count=0
+		for x in temp:
+			if str(x["Race"])==choix:
 				count+=1
 		print("\nIl y a "+str(count)+" victimes correspondant à votre demande")
 		Arret_prog=True
