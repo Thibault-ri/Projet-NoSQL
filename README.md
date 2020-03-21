@@ -12,3 +12,29 @@ response = requests.request("GET", url, headers=headers)
 Data=response.json
 
 print(response.text)
+
+i = 1
+j = 1
+y = 2
+m = ""
+jo = ""
+d = ""
+Ldate = []
+while y < 9:
+	while j < 13:
+		while i < 32:
+			if j < 10:
+				m = "0"+str(j)
+			else:
+				m=str(j)
+			if i<10:
+				jo="0"+str(i)
+			else:
+				jo=str(i)
+			d=m+"/"+jo+"/201"+str(y)
+			
+			i+=1
+		j+=1
+		i=1	
+	y+=1
+	j=1
