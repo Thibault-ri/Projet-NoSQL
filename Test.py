@@ -67,7 +67,10 @@ while not Arret_prog:
 				if int(x["Age"])==choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==2:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
@@ -84,13 +87,16 @@ while not Arret_prog:
 		print("\nIl y a "+str(count)+" victimes correspondant à votre demande")
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
-		if True:
+		if rep=="y":
 			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
 				if int(x["Age"])<choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==3:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
@@ -113,7 +119,10 @@ while not Arret_prog:
 				if int(x["Age"])>choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==4:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
@@ -139,7 +148,10 @@ while not Arret_prog:
 				if str(x["Sex"])==choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==5:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
 		choix_drug=str(input())
@@ -168,7 +180,10 @@ while not Arret_prog:
 				if str(x["Race"])==choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==6:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
 		choix_ville=str(input())
@@ -191,7 +206,10 @@ while not Arret_prog:
 				if int(x["Age"])==choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==7:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
 		choix_ville=str(input())
@@ -217,7 +235,10 @@ while not Arret_prog:
 				if str(x["Sex"])==choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==8:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
 		choix_ville=str(input())
@@ -240,7 +261,10 @@ while not Arret_prog:
 				if int(x["Age"])>choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==9:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
 		choix_ville=str(input())
@@ -263,7 +287,10 @@ while not Arret_prog:
 				if int(x["Age"])<choix:
 					print(x)
 					print("\n")
-		Arret_prog=True
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
 	if reponse==10:
 		print("\nVeuillez choisir une ethnie parmis les suivantes (attention a bien respecter l orthographe): ")
 		for x in ListeEthnie:
@@ -292,7 +319,123 @@ while not Arret_prog:
 				if str(x["Sex"])==choix_sex:
 					print(x)
 					print("\n")
-		Arret_prog=True
-	if reponse==16:
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
 			Arret_prog=True
+	if reponse==11:
+		max=0
+		max_c=""
+		for x in ListeVille:
+			temp=Victimes.find({"DeathCity":x})
+			count=0
+			for y in temp:
+				count+=1
+			if count>max:
+				max=count
+				max_c=x
+		print("\nLa ville avec le plus de mort est: "+max_c+" avec "+str(max)+" morts.")
+		print("Souhaitez vous afficher leur informations? (y/n)")
+		rep=str(input())
+		if rep=="y":
+			temp=Victimes.find({"DeathCity":max_c})
+			for x in temp:
+				print(x)
+				print("\n")
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
+	if reponse==12:
+		max=0
+		max_d=""
+		for x in Liste_drogues:
+			temp=Victimes.find({x:"Y"})
+			count=0
+			for y in temp:
+				count+=1
+			if count>max:
+				max=count
+				max_d=x
+		print("\nLa drogue presente chez le plus de mort est: "+max_d+" avec "+str(max)+" morts.")
+		print("Souhaitez vous afficher leur informations? (y/n)")
+		rep=str(input())
+		if rep=="y":
+			temp=Victimes.find({max_d:"Y"})
+			for x in temp:
+				print(x)
+				print("\n")
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
+	if reponse==13:
+		print("Veuillez choisir un age:")
+		choix=int(input())
+		max=0
+		max_d=""
+		for x in Liste_drogues:
+			temp=Victimes.find({x:"Y"})
+			count=0
+			for y in temp:
+				if int(y["Age"])>choix:
+					count+=1
+			if count>max:
+				max=count
+				max_d=x
+		print("\nLa drogue presente chez le plus de mort de plus de "+str(choix)+"ans est: "+max_d+" avec "+str(max)+" morts.")
+		print("Souhaitez vous afficher leur informations? (y/n)")
+		rep=str(input())
+		if rep=="y":
+			temp=Victimes.find({max_d:"Y"})
+			for x in temp:
+				if int(x["Age"])>choix:
+					print(x)
+					print("\n")
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
+	if reponse==14:
+		print("Veuillez choisir un age:")
+		choix=int(input())
+		max=0
+		max_d=""
+		for x in Liste_drogues:
+			temp=Victimes.find({x:"Y"})
+			count=0
+			for y in temp:
+				if int(y["Age"])<choix:
+					count+=1
+			if count>max:
+				max=count
+				max_d=x
+		print("\nLa drogue presente chez le plus de mort de moins de "+str(choix)+"ans est: "+max_d+" avec "+str(max)+" morts.")
+		print("Souhaitez vous afficher leur informations? (y/n)")
+		rep=str(input())
+		if rep=="y":
+			temp=Victimes.find({max_d:"Y"})
+			for x in temp:
+				if int(x["Age"])<choix:
+					print(x)
+					print("\n")
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
+	if reponse==15:
+		Sage=0
+		Nm=0
+		temp=Victimes.find()
+		for x in temp:
+			Sage+=int(x["Age"])
+			Nm+=1
+		Moy=Sage/Nm
+		print("\nLa moyenne d'age des victimes de drogue est de: "+str(Moy)+"ans.")
+		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
+		quitter=input()
+		if quitter==y:
+			Arret_prog=True
+	if reponse==16:
+		Arret_prog=True
 				
