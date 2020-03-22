@@ -32,7 +32,6 @@ while not Arret_prog:
 	print("Choix 7: Nombre de mort pour une ville choisie et un sexe choisi ")
 	print("Choix 8: Nombre de mort pour une ville choisie et après un age choisi ")
 	print("Choix 9: Nombre de mort pour une ville choisie et avant un age choisi ")
-	print("Choix 10: Nombre de mort pour une ville choisie et à un age choisi ")
 	print("Choix 10: Nombre de mort pour une ethnie choisie et à un sexe choisi ")
 	print("Choix 11: La ville ayant eu le plus de mort ")
 	print("Choix 12: La drogue etant presente chez le plus de morts")
@@ -63,9 +62,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])==choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==2:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -83,10 +84,12 @@ while not Arret_prog:
 		print("\nIl y a "+str(count)+" victimes correspondant à votre demande")
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
-		if rep=="y":
+		if True:
+			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])<choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==3:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -105,9 +108,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])>choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==4:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -129,9 +134,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
-				print(x)
-				print("\n")
+				if str(x["Sex"])==choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==5:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -156,9 +163,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({choix_drug:"Y"})
 			for x in temp:
-				print(x)
-				print("\n")
+				if str(x["Race"])==choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==6:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -177,9 +186,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({"DeathCity":choix_ville})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])==choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==7:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -201,9 +212,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({"DeathCity":choix_ville})
 			for x in temp:
-				print(x)
-				print("\n")
+				if str(x["Sex"])==choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==8:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -222,9 +235,11 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({"DeathCity":choix_ville})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])>choix:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==9:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -243,9 +258,40 @@ while not Arret_prog:
 		print("Souhaitez vous les afficher? (y/n)")
 		rep=str(input())
 		if rep=="y":
+			temp=Victimes.find({"DeathCity":choix_ville})
 			for x in temp:
-				print(x)
-				print("\n")
+				if int(x["Age"])<choix:
+					print(x)
+					print("\n")
+		Arret_prog=True
+	if reponse==10:
+		print("\nVeuillez choisir une ethnie parmis les suivantes (attention a bien respecter l orthographe): ")
+		for x in ListeEthnie:
+			print(x)
+		print("\n")
+		choix=str(input())
+		while choix not in ListeEthnie:
+			print("Cette ethnie ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			choix=str(input())
+		print("\nVeuillez choisir un sexe: Male ou Female")
+		choix_sex=str(input())
+		while choix_sex not in ["Male","Female"]:
+			print("Ce sexe ne correspond à aucun choix, veuillez modifier votre choix: \n Entrez votre choix:\n")
+			choix_sex=str(input())
+		temp=Victimes.find({"Race":choix})
+		count=0
+		for x in temp:
+			if str(x["Sex"])==choix_sex:
+				count+=1
+		print("\nIl y a "+str(count)+" victimes correspondant à votre demande")
+		print("Souhaitez vous les afficher? (y/n)")
+		rep=str(input())
+		if rep=="y":
+			temp=Victimes.find({"Race":choix})
+			for x in temp:
+				if str(x["Sex"])==choix_sex:
+					print(x)
+					print("\n")
 		Arret_prog=True
 	if reponse==16:
 			Arret_prog=True
