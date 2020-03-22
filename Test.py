@@ -69,7 +69,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==2:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -95,7 +95,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==3:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -121,7 +121,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==4:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -150,7 +150,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==5:
 		print("Veuillez choisir une drogue parmis cette liste: \n Heroin, Cocaine, Fentanyl, FentanylAnalogue, Oxycodone, Oxymorphone, Ethanol, Hydrocodone, Benzodiazepine, Methadone, Amphet, Tramad, Morphine_NotHeroin, Hydromorphone, Other, OpiateNOS, AnyOpioid\n et entrer son nom:")
@@ -182,7 +182,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==6:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -208,7 +208,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==7:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -237,7 +237,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==8:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -263,7 +263,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==9:
 		print("Veuillez choisir une ville parmis cette liste: \n HARTFORD,NEW HAVEN,WATERBURY,BRIDGEPORT, NEW BRITAIN, MERIDEN,NORWICH,BRISTOL,NEW LONDON,DANBURY, TORRINGTON,MANCHESTER,MIDDLETOWN,ENFIELD,STAMFORD,EAST HARTFORD, MILFORD, WEST HAVEN,NORWALK,DERBY\n et entrer son nom:")
@@ -289,7 +289,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==10:
 		print("\nVeuillez choisir une ethnie parmis les suivantes (attention a bien respecter l orthographe): ")
@@ -321,7 +321,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==11:
 		max=0
@@ -344,7 +344,7 @@ while not Arret_prog:
 				print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==12:
 		max=0
@@ -367,7 +367,7 @@ while not Arret_prog:
 				print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==13:
 		print("Veuillez choisir un age:")
@@ -394,7 +394,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==14:
 		print("Veuillez choisir un age:")
@@ -421,7 +421,7 @@ while not Arret_prog:
 					print("\n")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==15:
 		Sage=0
@@ -434,8 +434,9 @@ while not Arret_prog:
 		print("\nLa moyenne d'age des victimes de drogue est de: "+str(Moy)+"ans.")
 		print("\n\n Souhaitez vous revenir au menu ? (y/n)")
 		quitter=input()
-		if quitter==y:
+		if quitter!="y":
 			Arret_prog=True
 	if reponse==16:
 		Arret_prog=True
+		os.system('cls' if os.name == 'nt' else 'clear')
 				
