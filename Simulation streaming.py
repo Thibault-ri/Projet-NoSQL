@@ -9,7 +9,7 @@ import time
 import os
 
 
-dt=pd.read_csv("test.csv",sep=',')
+dt=pd.read_csv("data.csv",sep=',')
 dt = dt.dropna(subset=['Age'])
 
 tridate=dt.sort_values('ID')
